@@ -1,0 +1,797 @@
+================================================================================
+Appcelerator Titanium Diagnostics Build Log
+The contents of this file are useful to send to Appcelerator Support if
+reporting an issue to help us understand your environment, build settings
+and aid in debugging. Please attach this log to any issue that you report.
+================================================================================
+
+Starting build at 02/23/12 16:34
+
+Build details:
+
+   timestamp=12/22/11 13:09
+   module_apiversion=2
+   version=1.8.0.1
+   githash=fbdc96f
+
+
+Script arguments:
+   /Users/apple/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/iphone/builder.py
+   simulator
+   5.0
+   /Users/apple/Documents/TitaniumWorkspace/TestCook
+   co.herxun.TestCook
+   TestCook
+   iphone
+   iphone
+   192.168.2.3:57054
+
+Building from: /Users/apple/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/iphone
+Platform: Darwin Kernel Version 11.3.0: Thu Jan 12 18:47:41 PST 2012; root:xnu-1699.24.23~1/RELEASE_X86_64
+
+Xcode path is: /Developer
+
+
+githash=fbdc96f, existing_git_hash=fbdc96f
+writing contents of /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/project.xcconfig:
+
+TI_VERSION=1.8.0.1
+TI_SDK_DIR=/Users/apple/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION)/iphone
+TI_APPID=co.herxun.TestCook
+OTHER_LDFLAGS[sdk=iphoneos*]=$(inherited) -weak_framework iAd
+OTHER_LDFLAGS[sdk=iphonesimulator*]=$(inherited) -weak_framework iAd
+#include "module"
+
+old contents
+
+
+Generated the following stylecode code:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>classes</key>
+		<dict>
+</dict>
+
+		<key>classes_density</key>
+		<dict>
+</dict>
+
+		<key>ids</key>
+		<dict>
+</dict>
+
+		<key>ids_density</key>
+		<dict>
+</dict>
+
+		<key>tags</key>
+		<dict>
+</dict>
+
+		<key>tags_density</key>
+		<dict>
+</dict>
+
+	</dict>
+</plist>
+Starting Xcode compile with the following arguments:
+
+    xcodebuild
+    -target
+    TestCook
+    -configuration
+    Debug
+    -sdk
+    iphonesimulator5.0
+    GCC_PREPROCESSOR_DEFINITIONS=__LOG__ID__=8dbf7e7d-2c79-4674-a66b-b726be06993c DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.8.0.1 DEBUGGER_ENABLED=1 
+    IPHONEOS_DEPLOYMENT_TARGET=4.0
+    TARGETED_DEVICE_FAMILY=1
+
+app_id = co.herxun.TestCook
+
+
+Build settings from command line:
+    GCC_PREPROCESSOR_DEFINITIONS = __LOG__ID__=8dbf7e7d-2c79-4674-a66b-b726be06993c DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.8.0.1 DEBUGGER_ENABLED=1 
+    IPHONEOS_DEPLOYMENT_TARGET = 4.0
+    SDKROOT = iphonesimulator5.0
+    TARGETED_DEVICE_FAMILY = 1
+
+=== BUILD NATIVE TARGET TestCook OF PROJECT TestCook WITH CONFIGURATION Debug ===
+Check dependencies
+
+ProcessInfoPlistFile build/Debug-iphonesimulator/TestCook.app/Info.plist Info.plist
+    cd /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-infoPlistUtility Info.plist -genpkginfo /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/Info.plist
+
+PhaseScriptExecution Pre-Compile build/TestCook.build/Debug-iphonesimulator/TestCook.build/Script-241EAF36118E30260081A5BE.sh
+    cd /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv ACTION build
+    setenv ALTERNATE_GROUP staff
+    setenv ALTERNATE_MODE u+w,go-w,a+rX
+    setenv ALTERNATE_OWNER apple
+    setenv ALWAYS_SEARCH_USER_PATHS NO
+    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer
+    setenv APPLE_INTERNAL_DIR /AppleInternal
+    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation
+    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library
+    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools
+    setenv APPLY_RULES_IN_COPY_FILES NO
+    setenv ARCHS i386
+    setenv ARCHS_STANDARD_32_BIT i386
+    setenv ARCHS_UNIVERSAL_IPHONE_OS i386
+    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"
+    setenv BUILD_COMPONENTS "headers build"
+    setenv BUILD_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build
+    setenv BUILD_ROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build
+    setenv BUILD_STYLE 
+    setenv BUILD_VARIANTS normal
+    setenv BUILT_PRODUCTS_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator
+    setenv CACHE_ROOT /var/folders/9w/zvpj62513zn1qbd6fzxvfkxh0000gn/C/com.apple.Xcode.501
+    setenv CCHROOT /var/folders/9w/zvpj62513zn1qbd6fzxvfkxh0000gn/C/com.apple.Xcode.501
+    setenv CHMOD /bin/chmod
+    setenv CHOWN /usr/sbin/chown
+    setenv CLASS_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/JavaClasses
+    setenv CLEAN_PRECOMPS YES
+    setenv CLONE_HEADERS NO
+    setenv CODESIGNING_FOLDER_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app
+    setenv CODE_SIGN_IDENTITY "iPhone Developer"
+    setenv COMMAND_MODE legacy
+    setenv COMPOSITE_SDK_DIRS /var/folders/9w/zvpj62513zn1qbd6fzxvfkxh0000gn/C/com.apple.Xcode.501/CompositeSDKs
+    setenv COMPRESS_PNG_FILES YES
+    setenv CONFIGURATION Debug
+    setenv CONFIGURATION_BUILD_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator
+    setenv CONFIGURATION_TEMP_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator
+    setenv CONTENTS_FOLDER_PATH TestCook.app
+    setenv COPYING_PRESERVES_HFS_DATA NO
+    setenv COPY_PHASE_STRIP NO
+    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES
+    setenv CP /bin/cp
+    setenv CURRENT_ARCH i386
+    setenv CURRENT_VARIANT normal
+    setenv DEAD_CODE_STRIPPING NO
+    setenv DEBUGGING_SYMBOLS YES
+    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym
+    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0
+    setenv DEPLOYMENT_LOCATION NO
+    setenv DEPLOYMENT_POSTPROCESSING NO
+    setenv DERIVED_FILES_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/DerivedSources
+    setenv DERIVED_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/DerivedSources
+    setenv DERIVED_SOURCES_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/DerivedSources
+    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications
+    setenv DEVELOPER_BIN_DIR /Developer/usr/bin
+    setenv DEVELOPER_DIR /Developer
+    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks
+    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""
+    setenv DEVELOPER_LIBRARY_DIR /Developer/Library
+    setenv DEVELOPER_SDK_DIR /Developer/SDKs
+    setenv DEVELOPER_TOOLS_DIR /Developer/Tools
+    setenv DEVELOPER_USR_DIR /Developer/usr
+    setenv DEVELOPMENT_LANGUAGE English
+    setenv DOCUMENTATION_FOLDER_PATH TestCook.app/English.lproj/Documentation
+    setenv DO_HEADER_SCANNING_IN_JAM NO
+    setenv DSTROOT /tmp/TestCook.dst
+    setenv DWARF_DSYM_FILE_NAME TestCook.app.dSYM
+    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO
+    setenv DWARF_DSYM_FOLDER_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator
+    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator
+    setenv ENABLE_HEADER_DEPENDENCIES YES
+    setenv ENABLE_OPENMP_SUPPORT NO
+    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"
+    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"
+    setenv EXECUTABLES_FOLDER_PATH TestCook.app/Executables
+    setenv EXECUTABLE_FOLDER_PATH TestCook.app
+    setenv EXECUTABLE_NAME TestCook
+    setenv EXECUTABLE_PATH TestCook.app/TestCook
+    setenv FILE_LIST /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/Objects/LinkFileList
+    setenv FIXED_FILES_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/FixedFiles
+    setenv FRAMEWORKS_FOLDER_PATH TestCook.app/Frameworks
+    setenv FRAMEWORK_FLAG_PREFIX -framework
+    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator\" "
+    setenv FRAMEWORK_VERSION A
+    setenv FULL_PRODUCT_NAME TestCook.app
+    setenv GCC3_VERSION 3.3
+    setenv GCC_C_LANGUAGE_STANDARD c99
+    setenv GCC_DYNAMIC_NO_PIC NO
+    setenv GCC_ENABLE_CPP_RTTI NO
+    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES
+    setenv GCC_OBJC_LEGACY_DISPATCH YES
+    setenv GCC_OPTIMIZATION_LEVEL 0
+    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"
+    setenv GCC_PRECOMPILE_PREFIX_HEADER YES
+    setenv GCC_PREFIX_HEADER TestCook_Prefix.pch
+    setenv GCC_PREPROCESSOR_DEFINITIONS "__LOG__ID__=8dbf7e7d-2c79-4674-a66b-b726be06993c DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.8.0.1 DEBUGGER_ENABLED=1 "
+    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES
+    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO
+    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0
+    setenv GCC_WARN_ABOUT_RETURN_TYPE NO
+    setenv GCC_WARN_MISSING_PARENTHESES NO
+    setenv GCC_WARN_SHADOW NO
+    setenv GCC_WARN_STRICT_SELECTOR_MATCH NO
+    setenv GCC_WARN_UNUSED_FUNCTION YES
+    setenv GCC_WARN_UNUSED_PARAMETER NO
+    setenv GCC_WARN_UNUSED_VALUE NO
+    setenv GCC_WARN_UNUSED_VARIABLE NO
+    setenv GENERATE_MASTER_OBJECT_FILE NO
+    setenv GENERATE_PKGINFO_FILE YES
+    setenv GENERATE_PROFILING_CODE NO
+    setenv GID 20
+    setenv GROUP staff
+    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES
+    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES
+    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES
+    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES
+    setenv HEADER_SEARCH_PATHS "\"/Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/include\" /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/usr/include/libxml2 headers"
+    setenv ICONV /usr/bin/iconv
+    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES
+    setenv INFOPLIST_FILE Info.plist
+    setenv INFOPLIST_OUTPUT_FORMAT binary
+    setenv INFOPLIST_PATH TestCook.app/Info.plist
+    setenv INFOPLIST_PREPROCESS NO
+    setenv INFOSTRINGS_PATH TestCook.app/English.lproj/InfoPlist.strings
+    setenv INSTALL_DIR /tmp/TestCook.dst/Applications
+    setenv INSTALL_GROUP staff
+    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX
+    setenv INSTALL_OWNER apple
+    setenv INSTALL_PATH /Applications
+    setenv INSTALL_ROOT /tmp/TestCook.dst
+    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0
+    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"
+    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub
+    setenv JAVA_ARCHIVE_CLASSES YES
+    setenv JAVA_ARCHIVE_TYPE JAR
+    setenv JAVA_COMPILER /usr/bin/javac
+    setenv JAVA_FOLDER_PATH TestCook.app/Java
+    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources
+    setenv JAVA_JAR_FLAGS cv
+    setenv JAVA_SOURCE_SUBDIR .
+    setenv JAVA_USE_DEPENDENCIES YES
+    setenv JAVA_ZIP_FLAGS -urg
+    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"
+    setenv KEEP_PRIVATE_EXTERNS NO
+    setenv LD_GENERATE_MAP_FILE NO
+    setenv LD_MAP_FILE_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/TestCook-LinkMap-normal-i386.txt
+    setenv LD_NO_PIE NO
+    setenv LD_OPENMP_FLAGS -fopenmp
+    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer
+    setenv LEX /Developer/usr/bin/lex
+    setenv LIBRARY_FLAG_NOSPACE YES
+    setenv LIBRARY_FLAG_PREFIX -l
+    setenv LIBRARY_SEARCH_PATHS "\"/Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator\"  \"/Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/lib\""
+    setenv LINKER_DISPLAYS_MANGLED_NAMES NO
+    setenv LINK_FILE_LIST_normal_i386 /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/Objects-normal/i386/TestCook.LinkFileList
+    setenv LINK_WITH_STANDARD_LIBRARIES YES
+    setenv LOCALIZED_RESOURCES_FOLDER_PATH TestCook.app/English.lproj
+    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities
+    setenv LOCAL_APPS_DIR /Applications
+    setenv LOCAL_DEVELOPER_DIR /Library/Developer
+    setenv LOCAL_LIBRARY_DIR /Library
+    setenv MACH_O_TYPE mh_execute
+    setenv MACOSX_DEPLOYMENT_TARGET 10.6
+    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11D50b
+    setenv MAC_OS_X_VERSION_ACTUAL 1073
+    setenv MAC_OS_X_VERSION_MAJOR 1070
+    setenv MAC_OS_X_VERSION_MINOR 0703
+    setenv NATIVE_ARCH i386
+    setenv NATIVE_ARCH_32_BIT i386
+    setenv NATIVE_ARCH_64_BIT x86_64
+    setenv NATIVE_ARCH_ACTUAL x86_64
+    setenv NO_COMMON YES
+    setenv OBJC_ABI_VERSION 2
+    setenv OBJECT_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/Objects
+    setenv OBJECT_FILE_DIR_normal /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/Objects-normal
+    setenv OBJROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build
+    setenv ONLY_ACTIVE_ARCH NO
+    setenv OPTIMIZATION_LEVEL 0
+    setenv OS MACOS
+    setenv OSAC /usr/bin/osacompile
+    setenv OTHER_CFLAGS "-DDEBUG -DTI_POST_1_2"
+    setenv OTHER_CPLUSPLUSFLAGS "-DDEBUG -DTI_POST_1_2"
+    setenv OTHER_LDFLAGS "-ObjC -weak_framework iAd -weak_framework iAd"
+    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application
+    setenv PASCAL_STRINGS YES
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"
+    setenv PBDEVELOPMENTPLIST_PATH TestCook.app/pbdevelopment.plist
+    setenv PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"
+    setenv PKGINFO_FILE_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/PkgInfo
+    setenv PKGINFO_PATH TestCook.app/PkgInfo
+    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications
+    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin
+    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library
+    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs
+    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools
+    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr
+    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform
+    setenv PLATFORM_NAME iphonesimulator
+    setenv PLATFORM_PREFERRED_ARCH i386
+    setenv PLATFORM_PRODUCT_BUILD_VERSION 9A334
+    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 50000
+    setenv PLIST_FILE_OUTPUT_FORMAT binary
+    setenv PLUGINS_FOLDER_PATH TestCook.app/PlugIns
+    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES
+    setenv PRECOMP_DESTINATION_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/PrefixHeaders
+    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO
+    setenv PRIVATE_HEADERS_FOLDER_PATH TestCook.app/PrivateHeaders
+    setenv PRODUCT_NAME TestCook
+    setenv PRODUCT_SETTINGS_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/Info.plist
+    setenv PRODUCT_TYPE com.apple.product-type.application
+    setenv PROFILING_CODE NO
+    setenv PROJECT TestCook
+    setenv PROJECT_DERIVED_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/DerivedSources
+    setenv PROJECT_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv PROJECT_FILE_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/TestCook.xcodeproj
+    setenv PROJECT_NAME TestCook
+    setenv PROJECT_TEMP_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build
+    setenv PUBLIC_HEADERS_FOLDER_PATH TestCook.app/Headers
+    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES
+    setenv REMOVE_CVS_FROM_RESOURCES YES
+    setenv REMOVE_GIT_FROM_RESOURCES YES
+    setenv REMOVE_HG_FROM_RESOURCES YES
+    setenv REMOVE_SVN_FROM_RESOURCES YES
+    setenv REZ_COLLECTOR_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/ResourceManagerResources
+    setenv REZ_OBJECTS_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/ResourceManagerResources/Objects
+    setenv REZ_SEARCH_PATHS "\"/Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator\" "
+    setenv RUN_CLANG_STATIC_ANALYZER NO
+    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO
+    setenv SCRIPTS_FOLDER_PATH TestCook.app/Scripts
+    setenv SCRIPT_INPUT_FILE_COUNT 0
+    setenv SCRIPT_OUTPUT_FILE_COUNT 0
+    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
+    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
+    setenv SDK_NAME iphonesimulator5.0
+    setenv SDK_PRODUCT_BUILD_VERSION 9A334
+    setenv SED /usr/bin/sed
+    setenv SEPARATE_STRIP NO
+    setenv SEPARATE_SYMBOL_EDIT NO
+    setenv SET_DIR_MODE_OWNER_GROUP YES
+    setenv SET_FILE_MODE_OWNER_GROUP NO
+    setenv SHALLOW_BUNDLE YES
+    setenv SHARED_DERIVED_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/DerivedSources
+    setenv SHARED_FRAMEWORKS_FOLDER_PATH TestCook.app/SharedFrameworks
+    setenv SHARED_PRECOMPS_DIR /var/folders/9w/zvpj62513zn1qbd6fzxvfkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders
+    setenv SHARED_SUPPORT_FOLDER_PATH TestCook.app/SharedSupport
+    setenv SKIP_INSTALL NO
+    setenv SOURCE_ROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv SRCROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv STRINGS_FILE_OUTPUT_ENCODING binary
+    setenv STRIP_INSTALLED_PRODUCT YES
+    setenv STRIP_STYLE all
+    setenv SUPPORTED_DEVICE_FAMILIES "1 2"
+    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"
+    setenv SYMROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build
+    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities
+    setenv SYSTEM_APPS_DIR /Applications
+    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices
+    setenv SYSTEM_DEMOS_DIR /Applications/Extras
+    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications
+    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin
+    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"
+    setenv SYSTEM_DEVELOPER_DIR /Developer
+    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"
+    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"
+    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"
+    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"
+    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"
+    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools
+    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"
+    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"
+    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr
+    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities
+    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation
+    setenv SYSTEM_LIBRARY_DIR /System/Library
+    setenv TARGETED_DEVICE_FAMILY 1
+    setenv TARGETNAME TestCook
+    setenv TARGET_BUILD_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator
+    setenv TARGET_NAME TestCook
+    setenv TARGET_TEMP_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build
+    setenv TEMP_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build
+    setenv TEMP_FILES_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build
+    setenv TEMP_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build
+    setenv TEMP_ROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build
+    setenv TEST_AFTER_BUILD YES
+    setenv TI_APPID co.herxun.TestCook
+    setenv TI_SDK_DIR "/Users/apple/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/iphone"
+    setenv TI_VERSION 1.8.0.1
+    setenv UID 501
+    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH TestCook.app
+    setenv UNSTRIPPED_PRODUCT NO
+    setenv USER apple
+    setenv USER_APPS_DIR /Users/apple/Applications
+    setenv USER_LIBRARY_DIR /Users/apple/Library
+    setenv USE_DYNAMIC_NO_PIC YES
+    setenv USE_HEADERMAP YES
+    setenv USE_HEADER_SYMLINKS NO
+    setenv VALIDATE_PRODUCT NO
+    setenv VALID_ARCHS i386
+    setenv VERBOSE_PBXCP NO
+    setenv VERSIONPLIST_PATH TestCook.app/version.plist
+    setenv VERSION_INFO_BUILDER apple
+    setenv VERSION_INFO_FILE TestCook_vers.c
+    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:TestCook  PROJECT:TestCook-\""
+    setenv WRAPPER_EXTENSION app
+    setenv WRAPPER_NAME TestCook.app
+    setenv WRAPPER_SUFFIX .app
+    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode
+    setenv XCODE_PRODUCT_BUILD_VERSION 4D199
+    setenv XCODE_VERSION_ACTUAL 0420
+    setenv XCODE_VERSION_MAJOR 0400
+    setenv XCODE_VERSION_MINOR 0420
+    setenv YACC /Developer/usr/bin/yacc
+    /bin/sh -c /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/Script-241EAF36118E30260081A5BE.sh
+[INFO] One moment, building ...
+[INFO] Titanium SDK version: 1.8.0.1
+[INFO] iPhone Device family: iphone
+[INFO] iPhone SDK version: 5.0
+[DEBUG] Detecting modules in /Users/apple/Documents/TitaniumWorkspace/TestCook/modules
+[DEBUG] Detecting modules in /Users/apple/Library/Application Support/Titanium/modules
+[DEBUG] Detected module for iphone: Herxun.VPon 0.1 @ /Users/apple/Library/Application Support/Titanium/modules/iphone/herxun.vpon/0.1
+[DEBUG] copy resources from /Users/apple/Documents/TitaniumWorkspace/TestCook/Resources/iphone to /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app
+[DEBUG] copy resources from /Users/apple/Documents/TitaniumWorkspace/TestCook/platform/iphone to /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app
+[INFO] Skipping JS compile, running from simulator
+[DEBUG] linking: /Users/apple/Documents/TitaniumWorkspace/TestCook/Resources/app.js to /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/app.js
+[DEBUG] linking: /Users/apple/Documents/TitaniumWorkspace/TestCook/Resources/KS_nav_ui.png to /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/KS_nav_ui.png
+[DEBUG] linking: /Users/apple/Documents/TitaniumWorkspace/TestCook/Resources/KS_nav_views.png to /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/KS_nav_views.png
+[DEBUG] linking: /Users/apple/Documents/TitaniumWorkspace/TestCook/Resources/iphone/appicon.png to /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/appicon.png
+[DEBUG] linking: /Users/apple/Documents/TitaniumWorkspace/TestCook/Resources/iphone/Default-Landscape.png to /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/Default-Landscape.png
+[DEBUG] linking: /Users/apple/Documents/TitaniumWorkspace/TestCook/Resources/iphone/Default-Portrait.png to /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/Default-Portrait.png
+[DEBUG] linking: /Users/apple/Documents/TitaniumWorkspace/TestCook/Resources/iphone/Default.png to /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/Default.png
+[DEBUG] linking: /Users/apple/Documents/TitaniumWorkspace/TestCook/Resources/iphone/Default@2x.png to /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/Default@2x.png
+
+CopyPlistFile build/Debug-iphonesimulator/TestCook.app/stylesheet.plist Resources/stylesheet.plist
+    cd /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copyPlist --convert binary1 --outdir /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app -- Resources/stylesheet.plist
+
+CpResource Resources/Default.png build/Debug-iphonesimulator/TestCook.app/Default.png
+    cd /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/Resources/Default.png /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app
+
+CopyPlistFile build/Debug-iphonesimulator/TestCook.app/debugger.plist Resources/debugger.plist
+    cd /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copyPlist --convert binary1 --outdir /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app -- Resources/debugger.plist
+
+PhaseScriptExecution Post-Compile build/TestCook.build/Debug-iphonesimulator/TestCook.build/Script-24CA8D03111169070084E2DE.sh
+    cd /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv ACTION build
+    setenv ALTERNATE_GROUP staff
+    setenv ALTERNATE_MODE u+w,go-w,a+rX
+    setenv ALTERNATE_OWNER apple
+    setenv ALWAYS_SEARCH_USER_PATHS NO
+    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer
+    setenv APPLE_INTERNAL_DIR /AppleInternal
+    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation
+    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library
+    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools
+    setenv APPLY_RULES_IN_COPY_FILES NO
+    setenv ARCHS i386
+    setenv ARCHS_STANDARD_32_BIT i386
+    setenv ARCHS_UNIVERSAL_IPHONE_OS i386
+    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"
+    setenv BUILD_COMPONENTS "headers build"
+    setenv BUILD_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build
+    setenv BUILD_ROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build
+    setenv BUILD_STYLE 
+    setenv BUILD_VARIANTS normal
+    setenv BUILT_PRODUCTS_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator
+    setenv CACHE_ROOT /var/folders/9w/zvpj62513zn1qbd6fzxvfkxh0000gn/C/com.apple.Xcode.501
+    setenv CCHROOT /var/folders/9w/zvpj62513zn1qbd6fzxvfkxh0000gn/C/com.apple.Xcode.501
+    setenv CHMOD /bin/chmod
+    setenv CHOWN /usr/sbin/chown
+    setenv CLASS_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/JavaClasses
+    setenv CLEAN_PRECOMPS YES
+    setenv CLONE_HEADERS NO
+    setenv CODESIGNING_FOLDER_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app
+    setenv CODE_SIGN_IDENTITY "iPhone Developer"
+    setenv COMMAND_MODE legacy
+    setenv COMPOSITE_SDK_DIRS /var/folders/9w/zvpj62513zn1qbd6fzxvfkxh0000gn/C/com.apple.Xcode.501/CompositeSDKs
+    setenv COMPRESS_PNG_FILES YES
+    setenv CONFIGURATION Debug
+    setenv CONFIGURATION_BUILD_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator
+    setenv CONFIGURATION_TEMP_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator
+    setenv CONTENTS_FOLDER_PATH TestCook.app
+    setenv COPYING_PRESERVES_HFS_DATA NO
+    setenv COPY_PHASE_STRIP NO
+    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES
+    setenv CP /bin/cp
+    setenv CURRENT_ARCH i386
+    setenv CURRENT_VARIANT normal
+    setenv DEAD_CODE_STRIPPING NO
+    setenv DEBUGGING_SYMBOLS YES
+    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym
+    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0
+    setenv DEPLOYMENT_LOCATION NO
+    setenv DEPLOYMENT_POSTPROCESSING NO
+    setenv DERIVED_FILES_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/DerivedSources
+    setenv DERIVED_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/DerivedSources
+    setenv DERIVED_SOURCES_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/DerivedSources
+    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications
+    setenv DEVELOPER_BIN_DIR /Developer/usr/bin
+    setenv DEVELOPER_DIR /Developer
+    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks
+    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""
+    setenv DEVELOPER_LIBRARY_DIR /Developer/Library
+    setenv DEVELOPER_SDK_DIR /Developer/SDKs
+    setenv DEVELOPER_TOOLS_DIR /Developer/Tools
+    setenv DEVELOPER_USR_DIR /Developer/usr
+    setenv DEVELOPMENT_LANGUAGE English
+    setenv DOCUMENTATION_FOLDER_PATH TestCook.app/English.lproj/Documentation
+    setenv DO_HEADER_SCANNING_IN_JAM NO
+    setenv DSTROOT /tmp/TestCook.dst
+    setenv DWARF_DSYM_FILE_NAME TestCook.app.dSYM
+    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO
+    setenv DWARF_DSYM_FOLDER_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator
+    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator
+    setenv ENABLE_HEADER_DEPENDENCIES YES
+    setenv ENABLE_OPENMP_SUPPORT NO
+    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"
+    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"
+    setenv EXECUTABLES_FOLDER_PATH TestCook.app/Executables
+    setenv EXECUTABLE_FOLDER_PATH TestCook.app
+    setenv EXECUTABLE_NAME TestCook
+    setenv EXECUTABLE_PATH TestCook.app/TestCook
+    setenv FILE_LIST /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/Objects/LinkFileList
+    setenv FIXED_FILES_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/FixedFiles
+    setenv FRAMEWORKS_FOLDER_PATH TestCook.app/Frameworks
+    setenv FRAMEWORK_FLAG_PREFIX -framework
+    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator\" "
+    setenv FRAMEWORK_VERSION A
+    setenv FULL_PRODUCT_NAME TestCook.app
+    setenv GCC3_VERSION 3.3
+    setenv GCC_C_LANGUAGE_STANDARD c99
+    setenv GCC_DYNAMIC_NO_PIC NO
+    setenv GCC_ENABLE_CPP_RTTI NO
+    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES
+    setenv GCC_OBJC_LEGACY_DISPATCH YES
+    setenv GCC_OPTIMIZATION_LEVEL 0
+    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"
+    setenv GCC_PRECOMPILE_PREFIX_HEADER YES
+    setenv GCC_PREFIX_HEADER TestCook_Prefix.pch
+    setenv GCC_PREPROCESSOR_DEFINITIONS "__LOG__ID__=8dbf7e7d-2c79-4674-a66b-b726be06993c DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.8.0.1 DEBUGGER_ENABLED=1 "
+    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES
+    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO
+    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0
+    setenv GCC_WARN_ABOUT_RETURN_TYPE NO
+    setenv GCC_WARN_MISSING_PARENTHESES NO
+    setenv GCC_WARN_SHADOW NO
+    setenv GCC_WARN_STRICT_SELECTOR_MATCH NO
+    setenv GCC_WARN_UNUSED_FUNCTION YES
+    setenv GCC_WARN_UNUSED_PARAMETER NO
+    setenv GCC_WARN_UNUSED_VALUE NO
+    setenv GCC_WARN_UNUSED_VARIABLE NO
+    setenv GENERATE_MASTER_OBJECT_FILE NO
+    setenv GENERATE_PKGINFO_FILE YES
+    setenv GENERATE_PROFILING_CODE NO
+    setenv GID 20
+    setenv GROUP staff
+    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES
+    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES
+    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES
+    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES
+    setenv HEADER_SEARCH_PATHS "\"/Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/include\" /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/usr/include/libxml2 headers"
+    setenv ICONV /usr/bin/iconv
+    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES
+    setenv INFOPLIST_FILE Info.plist
+    setenv INFOPLIST_OUTPUT_FORMAT binary
+    setenv INFOPLIST_PATH TestCook.app/Info.plist
+    setenv INFOPLIST_PREPROCESS NO
+    setenv INFOSTRINGS_PATH TestCook.app/English.lproj/InfoPlist.strings
+    setenv INSTALL_DIR /tmp/TestCook.dst/Applications
+    setenv INSTALL_GROUP staff
+    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX
+    setenv INSTALL_OWNER apple
+    setenv INSTALL_PATH /Applications
+    setenv INSTALL_ROOT /tmp/TestCook.dst
+    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0
+    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"
+    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub
+    setenv JAVA_ARCHIVE_CLASSES YES
+    setenv JAVA_ARCHIVE_TYPE JAR
+    setenv JAVA_COMPILER /usr/bin/javac
+    setenv JAVA_FOLDER_PATH TestCook.app/Java
+    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources
+    setenv JAVA_JAR_FLAGS cv
+    setenv JAVA_SOURCE_SUBDIR .
+    setenv JAVA_USE_DEPENDENCIES YES
+    setenv JAVA_ZIP_FLAGS -urg
+    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"
+    setenv KEEP_PRIVATE_EXTERNS NO
+    setenv LD_GENERATE_MAP_FILE NO
+    setenv LD_MAP_FILE_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/TestCook-LinkMap-normal-i386.txt
+    setenv LD_NO_PIE NO
+    setenv LD_OPENMP_FLAGS -fopenmp
+    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer
+    setenv LEX /Developer/usr/bin/lex
+    setenv LIBRARY_FLAG_NOSPACE YES
+    setenv LIBRARY_FLAG_PREFIX -l
+    setenv LIBRARY_SEARCH_PATHS "\"/Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator\"  \"/Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/lib\""
+    setenv LINKER_DISPLAYS_MANGLED_NAMES NO
+    setenv LINK_FILE_LIST_normal_i386 /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/Objects-normal/i386/TestCook.LinkFileList
+    setenv LINK_WITH_STANDARD_LIBRARIES YES
+    setenv LOCALIZED_RESOURCES_FOLDER_PATH TestCook.app/English.lproj
+    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities
+    setenv LOCAL_APPS_DIR /Applications
+    setenv LOCAL_DEVELOPER_DIR /Library/Developer
+    setenv LOCAL_LIBRARY_DIR /Library
+    setenv MACH_O_TYPE mh_execute
+    setenv MACOSX_DEPLOYMENT_TARGET 10.6
+    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11D50b
+    setenv MAC_OS_X_VERSION_ACTUAL 1073
+    setenv MAC_OS_X_VERSION_MAJOR 1070
+    setenv MAC_OS_X_VERSION_MINOR 0703
+    setenv NATIVE_ARCH i386
+    setenv NATIVE_ARCH_32_BIT i386
+    setenv NATIVE_ARCH_64_BIT x86_64
+    setenv NATIVE_ARCH_ACTUAL x86_64
+    setenv NO_COMMON YES
+    setenv OBJC_ABI_VERSION 2
+    setenv OBJECT_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/Objects
+    setenv OBJECT_FILE_DIR_normal /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/Objects-normal
+    setenv OBJROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build
+    setenv ONLY_ACTIVE_ARCH NO
+    setenv OPTIMIZATION_LEVEL 0
+    setenv OS MACOS
+    setenv OSAC /usr/bin/osacompile
+    setenv OTHER_CFLAGS "-DDEBUG -DTI_POST_1_2"
+    setenv OTHER_CPLUSPLUSFLAGS "-DDEBUG -DTI_POST_1_2"
+    setenv OTHER_LDFLAGS "-ObjC -weak_framework iAd -weak_framework iAd"
+    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application
+    setenv PASCAL_STRINGS YES
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"
+    setenv PBDEVELOPMENTPLIST_PATH TestCook.app/pbdevelopment.plist
+    setenv PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"
+    setenv PKGINFO_FILE_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/PkgInfo
+    setenv PKGINFO_PATH TestCook.app/PkgInfo
+    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications
+    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin
+    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library
+    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs
+    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools
+    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr
+    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform
+    setenv PLATFORM_NAME iphonesimulator
+    setenv PLATFORM_PREFERRED_ARCH i386
+    setenv PLATFORM_PRODUCT_BUILD_VERSION 9A334
+    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 50000
+    setenv PLIST_FILE_OUTPUT_FORMAT binary
+    setenv PLUGINS_FOLDER_PATH TestCook.app/PlugIns
+    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES
+    setenv PRECOMP_DESTINATION_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/PrefixHeaders
+    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO
+    setenv PRIVATE_HEADERS_FOLDER_PATH TestCook.app/PrivateHeaders
+    setenv PRODUCT_NAME TestCook
+    setenv PRODUCT_SETTINGS_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/Info.plist
+    setenv PRODUCT_TYPE com.apple.product-type.application
+    setenv PROFILING_CODE NO
+    setenv PROJECT TestCook
+    setenv PROJECT_DERIVED_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/DerivedSources
+    setenv PROJECT_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv PROJECT_FILE_PATH /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/TestCook.xcodeproj
+    setenv PROJECT_NAME TestCook
+    setenv PROJECT_TEMP_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build
+    setenv PUBLIC_HEADERS_FOLDER_PATH TestCook.app/Headers
+    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES
+    setenv REMOVE_CVS_FROM_RESOURCES YES
+    setenv REMOVE_GIT_FROM_RESOURCES YES
+    setenv REMOVE_HG_FROM_RESOURCES YES
+    setenv REMOVE_SVN_FROM_RESOURCES YES
+    setenv REZ_COLLECTOR_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/ResourceManagerResources
+    setenv REZ_OBJECTS_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/ResourceManagerResources/Objects
+    setenv REZ_SEARCH_PATHS "\"/Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator\" "
+    setenv RUN_CLANG_STATIC_ANALYZER NO
+    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO
+    setenv SCRIPTS_FOLDER_PATH TestCook.app/Scripts
+    setenv SCRIPT_INPUT_FILE_COUNT 0
+    setenv SCRIPT_OUTPUT_FILE_COUNT 0
+    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
+    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
+    setenv SDK_NAME iphonesimulator5.0
+    setenv SDK_PRODUCT_BUILD_VERSION 9A334
+    setenv SED /usr/bin/sed
+    setenv SEPARATE_STRIP NO
+    setenv SEPARATE_SYMBOL_EDIT NO
+    setenv SET_DIR_MODE_OWNER_GROUP YES
+    setenv SET_FILE_MODE_OWNER_GROUP NO
+    setenv SHALLOW_BUNDLE YES
+    setenv SHARED_DERIVED_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/DerivedSources
+    setenv SHARED_FRAMEWORKS_FOLDER_PATH TestCook.app/SharedFrameworks
+    setenv SHARED_PRECOMPS_DIR /var/folders/9w/zvpj62513zn1qbd6fzxvfkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders
+    setenv SHARED_SUPPORT_FOLDER_PATH TestCook.app/SharedSupport
+    setenv SKIP_INSTALL NO
+    setenv SOURCE_ROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv SRCROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv STRINGS_FILE_OUTPUT_ENCODING binary
+    setenv STRIP_INSTALLED_PRODUCT YES
+    setenv STRIP_STYLE all
+    setenv SUPPORTED_DEVICE_FAMILIES "1 2"
+    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"
+    setenv SYMROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build
+    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities
+    setenv SYSTEM_APPS_DIR /Applications
+    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices
+    setenv SYSTEM_DEMOS_DIR /Applications/Extras
+    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications
+    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin
+    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"
+    setenv SYSTEM_DEVELOPER_DIR /Developer
+    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"
+    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"
+    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"
+    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"
+    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"
+    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools
+    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"
+    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"
+    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr
+    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities
+    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation
+    setenv SYSTEM_LIBRARY_DIR /System/Library
+    setenv TARGETED_DEVICE_FAMILY 1
+    setenv TARGETNAME TestCook
+    setenv TARGET_BUILD_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator
+    setenv TARGET_NAME TestCook
+    setenv TARGET_TEMP_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build
+    setenv TEMP_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build
+    setenv TEMP_FILES_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build
+    setenv TEMP_FILE_DIR /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build
+    setenv TEMP_ROOT /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build
+    setenv TEST_AFTER_BUILD YES
+    setenv TI_APPID co.herxun.TestCook
+    setenv TI_SDK_DIR "/Users/apple/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/iphone"
+    setenv TI_VERSION 1.8.0.1
+    setenv UID 501
+    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH TestCook.app
+    setenv UNSTRIPPED_PRODUCT NO
+    setenv USER apple
+    setenv USER_APPS_DIR /Users/apple/Applications
+    setenv USER_LIBRARY_DIR /Users/apple/Library
+    setenv USE_DYNAMIC_NO_PIC YES
+    setenv USE_HEADERMAP YES
+    setenv USE_HEADER_SYMLINKS NO
+    setenv VALIDATE_PRODUCT NO
+    setenv VALID_ARCHS i386
+    setenv VERBOSE_PBXCP NO
+    setenv VERSIONPLIST_PATH TestCook.app/version.plist
+    setenv VERSION_INFO_BUILDER apple
+    setenv VERSION_INFO_FILE TestCook_vers.c
+    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:TestCook  PROJECT:TestCook-\""
+    setenv WRAPPER_EXTENSION app
+    setenv WRAPPER_NAME TestCook.app
+    setenv WRAPPER_SUFFIX .app
+    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode
+    setenv XCODE_PRODUCT_BUILD_VERSION 4D199
+    setenv XCODE_VERSION_ACTUAL 0420
+    setenv XCODE_VERSION_MAJOR 0400
+    setenv XCODE_VERSION_MINOR 0420
+    setenv YACC /Developer/usr/bin/yacc
+    /bin/sh -c /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/TestCook.build/Debug-iphonesimulator/TestCook.build/Script-24CA8D03111169070084E2DE.sh
+post-compile
+
+Touch build/Debug-iphonesimulator/TestCook.app
+    cd /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /usr/bin/touch -c /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app
+
+
+** BUILD SUCCEEDED **
+
++ Looking for application binary at /Users/apple/Documents/TitaniumWorkspace/TestCook/build/iphone/build/Debug-iphonesimulator/TestCook.app/TestCook
+Finishing build
+
+Exception detected in script:
+Traceback (most recent call last):
+  File "/Users/apple/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/iphone/builder.py", line 1377, in main
+    os.waitpid(sim.pid,0)
+  File "/Users/apple/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/iphone/builder.py", line 1309, in handler
+    kill_simulator()
+  File "/Users/apple/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/iphone/builder.py", line 75, in kill_simulator
+    run.run(['/usr/bin/killall',"iPhone Simulator"],True)
+  File "/Users/apple/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/iphone/run.py", line 6, in run
+    sys.stdout.flush()
+IOError: [Errno 32] Broken pipe
